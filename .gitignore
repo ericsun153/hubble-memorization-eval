@@ -1,0 +1,27 @@
+# Logs
+logs/
+*.out
+*.err
+slurm-*.out
+
+# Model / large files
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environment
+miniconda3/
+anaconda3/
+.venv/
+venv/
+env/
+
+# VS Code
+.vscode/
