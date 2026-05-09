@@ -1,0 +1,14 @@
+Saved manifest to /gpfs/radev/scratch/q_chen/zs437/hubble_raw/manifest.json
+[
+  {
+    "dataset_id": "allegrolab/passages_gutenberg_popular",
+    "path": "/gpfs/radev/scratch/q_chen/zs437/hubble_raw/allegrolab__passages_gutenberg_popular.jsonl",
+    "status": "exists"
+  },
+  {
+    "dataset_id": "allegrolab/passages_gutenberg_unpopular",
+    "path": "/gpfs/radev/scratch/q_chen/zs437/hubble_raw/allegrolab__passages_gutenberg_unpopular.jsonl",
+    "status": "exists"
+  }
+]
+Saved 1000 eval items to data/eval_questions.jsonl

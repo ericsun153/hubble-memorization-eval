@@ -1,0 +1,66 @@
+[
+  {
+    "name": "hubble_1b_100b_standard",
+    "model_id": "allegrolab/hubble-1b-100b_toks-standard-hf",
+    "revision": null,
+    "size": "1B",
+    "tokens": "100B",
+    "condition": "standard"
+  },
+  {
+    "name": "hubble_1b_100b_perturbed",
+    "model_id": "allegrolab/hubble-1b-100b_toks-perturbed-hf",
+    "revision": null,
+    "size": "1B",
+    "tokens": "100B",
+    "condition": "perturbed"
+  },
+  {
+    "name": "hubble_1b_500b_standard",
+    "model_id": "allegrolab/hubble-1b-500b_toks-standard-hf",
+    "revision": null,
+    "size": "1B",
+    "tokens": "500B",
+    "condition": "standard"
+  },
+  {
+    "name": "hubble_1b_500b_perturbed",
+    "model_id": "allegrolab/hubble-1b-500b_toks-perturbed-hf",
+    "revision": null,
+    "size": "1B",
+    "tokens": "500B",
+    "condition": "perturbed"
+  },
+  {
+    "name": "hubble_8b_100b_standard",
+    "model_id": "allegrolab/hubble-8b-100b_toks-standard-hf",
+    "revision": null,
+    "size": "8B",
+    "tokens": "100B",
+    "condition": "standard"
+  },
+  {
+    "name": "hubble_8b_100b_perturbed",
+    "model_id": "allegrolab/hubble-8b-100b_toks-perturbed-hf",
+    "revision": null,
+    "size": "8B",
+    "tokens": "100B",
+    "condition": "perturbed"
+  },
+  {
+    "name": "hubble_8b_500b_standard",
+    "model_id": "allegrolab/hubble-8b-500b_toks-standard-hf",
+    "revision": null,
+    "size": "8B",
+    "tokens": "500B",
+    "condition": "standard"
+  },
+  {
+    "name": "hubble_8b_500b_perturbed",
+    "model_id": "allegrolab/hubble-8b-500b_toks-perturbed-hf",
+    "revision": null,
+    "size": "8B",
+    "tokens": "500B",
+    "condition": "perturbed"
+  }
+]

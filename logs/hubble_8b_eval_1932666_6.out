@@ -1,0 +1,4 @@
+Running hubble_8b_500b_standard
+Model ID: allegrolab/hubble-8b-500b_toks-standard-hf
+Revision: 238500
+CUDA_VISIBLE_DEVICES=0,1,2,3

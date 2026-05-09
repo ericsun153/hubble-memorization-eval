@@ -1,0 +1,107 @@
+Traceback (most recent call last):
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 761, in hf_raise_for_status
+    response.raise_for_status()
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '404 Not Found' for url 'https://huggingface.co/allegrolab/hubble-1b-100b_toks-standard-hf/resolve/None/config.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/transformers/utils/hub.py", line 422, in cached_files
+    hf_hub_download(
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 997, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1072, in _hf_hub_download_to_cache_dir
+    (url_to_download, etag, commit_hash, expected_size, xet_file_data, head_call_error) = _get_metadata_or_catch_error(
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1669, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1591, in get_hf_file_metadata
+    response = _httpx_follow_relative_redirects_with_backoff(
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 692, in _httpx_follow_relative_redirects_with_backoff
+    hf_raise_for_status(response)
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 777, in hf_raise_for_status
+    raise _format(RevisionNotFoundError, message, response, repo_type=repo_type, repo_id=repo_id) from e
+huggingface_hub.errors.RevisionNotFoundError: 404 Client Error. (Request ID: Root=1-69ffbfa6-0ead688d72cf64010363f717;dd13cdfb-f00b-4e86-94cd-cdbe39cb86b4)
+
+Revision Not Found for url: https://huggingface.co/allegrolab/hubble-1b-100b_toks-standard-hf/resolve/None/config.json.
+Invalid rev id: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 692, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 374, in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/transformers/configuration_utils.py", line 682, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/transformers/configuration_utils.py", line 737, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/transformers/utils/hub.py", line 278, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/transformers/utils/hub.py", line 461, in cached_files
+    raise OSError(
+OSError: None is not a valid git identifier (branch name, tag name or commit id) that exists for this model name. Check the model page at 'https://huggingface.co/allegrolab/hubble-1b-100b_toks-standard-hf' for available revisions.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 761, in hf_raise_for_status
+    response.raise_for_status()
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '404 Not Found' for url 'https://huggingface.co/allegrolab/hubble-1b-100b_toks-standard-hf/resolve/None/config.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/transformers/utils/hub.py", line 422, in cached_files
+    hf_hub_download(
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 997, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1072, in _hf_hub_download_to_cache_dir
+    (url_to_download, etag, commit_hash, expected_size, xet_file_data, head_call_error) = _get_metadata_or_catch_error(
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1669, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1591, in get_hf_file_metadata
+    response = _httpx_follow_relative_redirects_with_backoff(
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 692, in _httpx_follow_relative_redirects_with_backoff
+    hf_raise_for_status(response)
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 777, in hf_raise_for_status
+    raise _format(RevisionNotFoundError, message, response, repo_type=repo_type, repo_id=repo_id) from e
+huggingface_hub.errors.RevisionNotFoundError: 404 Client Error. (Request ID: Root=1-69ffbfa6-430fa30b6431756c028fd547;3c0a2a13-ad8c-4ec7-bf88-797009839180)
+
+Revision Not Found for url: https://huggingface.co/allegrolab/hubble-1b-100b_toks-standard-hf/resolve/None/config.json.
+Invalid rev id: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/gpfs/radev/project/q_chen/zs437/hubble_memorization_pipeline/scripts/run_generation_eval.py", line 187, in <module>
+    main()
+  File "/gpfs/radev/project/q_chen/zs437/hubble_memorization_pipeline/scripts/run_generation_eval.py", line 136, in main
+    tokenizer = AutoTokenizer.from_pretrained(
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 696, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/transformers/configuration_utils.py", line 641, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/transformers/configuration_utils.py", line 682, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/transformers/configuration_utils.py", line 737, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/transformers/utils/hub.py", line 278, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/gpfs/radev/home/zs437/.conda/envs/hubble/lib/python3.10/site-packages/transformers/utils/hub.py", line 461, in cached_files
+    raise OSError(
+OSError: None is not a valid git identifier (branch name, tag name or commit id) that exists for this model name. Check the model page at 'https://huggingface.co/allegrolab/hubble-1b-100b_toks-standard-hf' for available revisions.

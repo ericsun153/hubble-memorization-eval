@@ -1,0 +1,4 @@
+Running hubble_8b_500b_perturbed
+Model ID: allegrolab/hubble-8b-500b_toks-perturbed-hf
+Revision: None
+CUDA_VISIBLE_DEVICES=0,1,2,3
